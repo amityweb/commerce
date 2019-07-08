@@ -36,7 +36,7 @@ Returns an array of <api:craft\commerce\models\Country> objects.
 
 ```twig
 <select>
-{% for country in craft.commerce.countries %}
+{% for country in craft.commerce.countries.allCountries %}
     <option value="{{ country.id }}">{{ country.name }}</option>
 {% endfor %}
 </select>
